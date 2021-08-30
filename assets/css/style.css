@@ -8,4 +8,5 @@ body {
     height: 100%;
     background-image: url(/assets/images/braintrainbackground.jpg);
     background-color: green;
+    background-position: center;
 }
