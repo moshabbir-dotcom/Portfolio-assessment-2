@@ -1,6 +1,6 @@
 const cards = document.querySelectorAll(".playing-card");
 
-function spinCard(){
+function spinCard() {
     this.classList.toggle("spin");
 }
 

@@ -18,6 +18,7 @@ h1 {
 }
 
 .gameplay-area {
+    perspective: 1000px;
     height: 650px;
     width: 750px;
     display: flex;
@@ -32,6 +33,8 @@ h1 {
     position: relative;
     margin: 5px;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
 
 .playing-card:active {
