@@ -22,8 +22,10 @@ function spinCard() {
             card2.removeEventListener("click", spinCard);
         }   else {
             //if the cards are not the same
+            setTimeout(() => {
             card1.classList.remove("spin");
             card2.classList.remove("spin");
+        }, 1250);
         }
     }
 }
