@@ -10,3 +10,7 @@ body {
     background-color: green;
     background-position: center;
 }
+
+img {
+    width: 120px;
+}
