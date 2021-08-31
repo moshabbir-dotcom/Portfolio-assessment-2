@@ -38,6 +38,10 @@ h1 {
     transform: scale(0.98)
 }
 
+.playing-card.spin {
+    transform: rotateY(180deg);
+}
+
 .card-back, .card-front {
     border-radius: 2px;
     position: absolute;
