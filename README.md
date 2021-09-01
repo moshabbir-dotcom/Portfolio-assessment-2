@@ -85,9 +85,8 @@
 
 ## Bugs- 
 * <!--Update this-->
-
 * When writing the hasTurnedCard function the second card was not spinning if there was no match on the dataset. As a result a timeout function had to be set as part of the function itself in order to allow the user enough time to see the second card before making another selection.
-* 
+* When double clicking the SAME card it caused the removeEventListener function to occur as the data.cardid matched so the single card then stayed spun with the image on display. Another conditon had to be set in the hasTurnedCard function which if card1 was clicked on twice would cause a return from the function and would only stay spun if the dataset.cardid matched for two DIFFERENT cards clicked upon.
 
 # DEPLOYMENT-
 The project was deployed to GitHub Pages using the following procedure:
@@ -101,17 +100,16 @@ The project was deployed to GitHub Pages using the following procedure:
 
 # CREDITS- <!--Update this-->
 * Code for the form was resused from my challenge 2 submission at the end of the running walkthrough. This was then adjusted and added to in order to make it relevant for what the CONTACT page was trying to achieve.
-* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written.
-* Thanks also to Bim Williams who introduced me to the benefits of using flex as a CSS element and sent me some extra curricular reading material to understand CSS far better.
+* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file.
+* Thanks also to Bim Williams who 
 * 
 
 # CONTENT & MEDIA-<!--Update this-->
-* All photos and videos are copyright of 
+* All photos and videos are copyright of the respective copyright holders and taken from free image sites. The images were then all compressed to aid in page load speed.
 
 # OPPORTUNITIES- <!--Update this-->
-* 
-
-* 
+* There is an opportunity to increase the complexity of the game by adding a scoring mechanic which if a minimum score is achieved would open up another "level" in that the gameplay grid could start from a 3x3 and potentially go up to a 32x32 gameplay grid for all 16 Rorschach images obtained.
+* With the above in mind it could also be an option to build in the functionality to select a gamplay grid before loading a game which would remove the need to have to "level up" everytime a user plays.
 
 * 
 
