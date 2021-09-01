@@ -12,7 +12,8 @@
 * 
 # DESIGN-<!--Update this-->
 * Typography used is 
-* Colour scheme has been chosen to be contrasting with light/dark colour breaks not too drastic as the font colours are uniform throughout the site including the hero colour. 
+* Colour scheme has been chosen to be contrasting with light/dark colours in the background image with a simple backup colour in order to not clash with the red back of the playing card or the simple monochrome of the rorshach images themselves.
+* Font awesome icon has been used to add decoration to the limited text on the index.html page. 
 
 ## Wireframe mocks-<!--Update this-->
 <img src="">
