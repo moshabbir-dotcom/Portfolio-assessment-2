@@ -44,11 +44,11 @@
 * [JavaScript] (https://https://en.wikipedia.org/wiki/JavaScript)
 
 # LIBRARIES & PROGRAMS-
-* [Google Fonts:](https://fonts.google.com/) Google fonts were used to import the "Noto San JP" & "Roboto" fonts into the pa1style.css file which is used on all pages of the website.
-* [Font Awesome:](https://fontawesome.com/) Font Awesome was used on "index" and "contact" pages throughout the website to add icons for aesthetic purposes and add to the UX of the site.
+* [Google Fonts:](https://fonts.google.com/) Google fonts were used to import the "Oswald" font into the style.css file which is used on all pages of the website with Sans Serif as a backup font. This font & weight was selected for ease of reading for the potential user of the site.
+* [Font Awesome:](https://fontawesome.com/) Font Awesome was used on all pages throughout the website to add icons for aesthetic purposes and add to the UX of the site.
 * [GitHub:](https://github.com/) GitHub was used to store the projects code after being pushed from Gitpod.
 * [Gitpod:](https://gitpod.io/) Gitpod was used to write the project code.
-* [TinyPNG](https://tinypng.com) TinyPNG was used to compress image sizes to aid in page loading speed. However does not support files sizes above 5mb without paid subscription.
+* [TinyPNG](https://tinypng.com) TinyPNG was used to compress image sizes to aid in page loading speed.
 * [Favicon](https://favicon.io/) Favicon was used to compress image files into an icon for use in the website.
 
 # DETAILED SECTION SUMMARY-<!--Update this-->
@@ -86,6 +86,7 @@
 ## Bugs- 
 * <!--Update this-->
 
+* When writing the hasTurnedCard function the second card was not spinning if there was no match on the dataset. As a result a timeout function had to be set as part of the function itself in order to allow the user enough time to see the second card before making another selection.
 * 
 
 # DEPLOYMENT-
@@ -100,8 +101,9 @@ The project was deployed to GitHub Pages using the following procedure:
 
 # CREDITS- <!--Update this-->
 * Code for the form was resused from my challenge 2 submission at the end of the running walkthrough. This was then adjusted and added to in order to make it relevant for what the CONTACT page was trying to achieve.
-* Credit is also given to my mentor Can Sucullu who provided me with the code to place the map on the contact page and showed me where I was going wrong in the process.
+* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written.
 * Thanks also to Bim Williams who introduced me to the benefits of using flex as a CSS element and sent me some extra curricular reading material to understand CSS far better.
+* 
 
 # CONTENT & MEDIA-<!--Update this-->
 * All photos and videos are copyright of 
