@@ -104,13 +104,12 @@ The project was deployed to GitHub Pages using the following procedure:
 * Thanks also to Bim Williams who 
 * 
 
-# CONTENT & MEDIA-<!--Update this-->
+# CONTENT & MEDIA-
 * All photos and videos are copyright of the respective copyright holders and taken from free image sites. The images were then all compressed to aid in page load speed.
 
 # OPPORTUNITIES- <!--Update this-->
-* There is an opportunity to increase the complexity of the game by adding a scoring mechanic which if a minimum score is achieved would open up another "level" in that the gameplay grid could start from a 3x3 and potentially go up to a 32x32 gameplay grid for all 16 Rorschach images obtained.
+* There is an opportunity to increase the complexity of the game by adding a scoring mechanic which if a minimum score is achieved would open up another "level" in that the gameplay grid could start from a 3x3 and potentially go up to a 32x32 gameplay grid for all 16 Rorschach images obtained when collating images to be used as part of the design and planning stage.
 * With the above in mind it could also be an option to build in the functionality to select a gamplay grid before loading a game which would remove the need to have to "level up" everytime a user plays.
-
-* 
+* There is another opportunity in making the code easier to read by using ternary operators although at this stage of my coding journey I find it easier to be using the longer syntax in order to understand the code I am writing.
 
 * 
