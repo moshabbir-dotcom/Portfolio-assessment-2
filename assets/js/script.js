@@ -23,18 +23,22 @@ function matchCard() {
    //this is to check if both cards match
    if (card1.dataset.cardid === card2.dataset.cardid) {
     cardOff();
-}   else {
-    //if the cards are not the same
-    setTimeout(() => {
-    card1.classList.remove("spin");
-    card2.classList.remove("spin");
-}, 1250);
-} 
+    }   else {
+        spinBack();
+        } 
 }
 
 function cardOff(){
     //if the cards are the same
     card1.removeEventListener("click", spinCard);
     card2.removeEventListener("click", spinCard);
+}
+
+function spinBack() {
+    //if the cards are not the same
+  setTimeout(() => {
+    card1.classList.remove("spin");
+    card2.classList.remove("spin");
+    }, 1250);   
 }
 cards.forEach(card => card.addEventListener("click", spinCard))
