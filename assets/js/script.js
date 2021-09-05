@@ -1,9 +1,11 @@
 const cards = document.querySelectorAll(".playing-card");
 
 let hasTurnedCard = false;
+let freezeBoard = false;
 let card1, card2;
 
 function spinCard() {
+    if (freezeBoard) return;
     this.classList.add("spin");
 
     if (!hasTurnedCard) {
@@ -36,9 +38,11 @@ function cardOff(){
 
 function spinBack() {
     //if the cards are not the same
-  setTimeout(() => {
+  freezeBoard = true;
+    setTimeout(() => {
     card1.classList.remove("spin");
     card2.classList.remove("spin");
+    freezeBoard = false;
     }, 1250);   
 }
 cards.forEach(card => card.addEventListener("click", spinCard))

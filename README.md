@@ -52,24 +52,10 @@
 * [Favicon](https://favicon.io/) Favicon was used to compress image files into an icon for use in the website.
 
 # DETAILED SECTION SUMMARY-<!--Update this-->
-## Navigation Menu- 
+## How 2 play page- 
 * 
-## Landing Page- 
+## Gameplay page- 
 * 
-## Header- 
-* 
-## Main Section- 
-* 
-
-* 
-## Footer- 
-* 
-## Gallery- 
-*  
-* 
-## Contact Page- 
-* 
-
 # TESTING-
 <!--Update this-->
 * Tested through W3C code tester for HTML and W3C for CSS with no errors. The were warnings on all 3 html pages advising the use of h2 to h6 tags due to the word "section" being used in the html code although this was not required for this project and in future would be avoided.
@@ -87,6 +73,7 @@
 * <!--Update this-->
 * When writing the hasTurnedCard function the second card was not spinning if there was no match on the dataset. As a result a timeout function had to be set as part of the function itself in order to allow the user enough time to see the second card before making another selection.
 * When double clicking the SAME card it caused the removeEventListener function to occur as the data.cardid matched so the single card then stayed spun with the image on display. Another conditon had to be set in the hasTurnedCard function which if card1 was clicked on twice would cause a return from the function and would only stay spun if the dataset.cardid matched for two DIFFERENT cards clicked upon.
+* If more than 2 cards where clicked BEFORE the initial 2 cards had either matched or spun back it would cause the game to crash. A solution for this was to not allow more than 2 cards to be selected so they could either be matched and taken out of play or spin back around before the game would allow for another selection of card.
 
 # DEPLOYMENT-
 The project was deployed to GitHub Pages using the following procedure:
