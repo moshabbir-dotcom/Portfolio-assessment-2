@@ -46,7 +46,7 @@ function spinBack() {
     setTimeout(() => {
     card1.classList.remove("spin");
     card2.classList.remove("spin");
-    
+
     resetGameboard();
     }, 1250);   
 }
@@ -58,9 +58,9 @@ function resetGameboard() {
 
 (function randomiseCards() {
     cards.forEach(card => {
-        let randomPosition = math.floor(math.random() * 12);
+        let randomPosition = Math.floor(Math.random() * 12);
         card.style.order = randomPosition;
     });
-})();
+})(); 
 
 cards.forEach(card => card.addEventListener("click", spinCard))
