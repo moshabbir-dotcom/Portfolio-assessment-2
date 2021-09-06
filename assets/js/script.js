@@ -56,4 +56,12 @@ function resetGameboard() {
     [hasTurnedCard, freezeBoard] = [false, false];
     [card1, card2] = [null, null];
 }
+
+(function randomiseCards() {
+    cards.forEach(card => {
+        let randomPosition = math.floor(math.random() * 12);
+        card.style.order = randomPosition;
+    });
+})();
+
 cards.forEach(card => card.addEventListener("click", spinCard))
