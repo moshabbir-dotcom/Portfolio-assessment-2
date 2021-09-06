@@ -7,15 +7,18 @@ let card1, card2;
 function spinCard() {
     if (freezeBoard) return;
     if (this === card1) return;
+
     this.classList.add("spin");
 
     if (!hasTurnedCard) {
         //this is the first spin
         hasTurnedCard = true;
         card1 = this;
+
+        return
+
     }   else {
         //this is the second spin
-        hasTurnedCard = false;
         card2 = this;
 
         matchCard();
@@ -35,6 +38,8 @@ function cardOff(){
     //if the cards are the same
     card1.removeEventListener("click", spinCard);
     card2.removeEventListener("click", spinCard);
+
+    resetGameboard();
 }
 
 function spinBack() {
@@ -43,9 +48,12 @@ function spinBack() {
     setTimeout(() => {
     card1.classList.remove("spin");
     card2.classList.remove("spin");
-    freezeBoard = false;
+    resetGameboard();
     }, 1250);   
 }
 
-
+function resetGameboard() {
+    [hasTurnedCard, freezeBoard] = [false, false];
+    [card1, card2] = [null, null];
+}
 cards.forEach(card => card.addEventListener("click", spinCard))

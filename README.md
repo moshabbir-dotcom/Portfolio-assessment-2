@@ -1,22 +1,19 @@
 # PORTFOLIO-ASSESSMENT-2
 * A simple interactive website using HTML, CSS and JavaScript
-## User Objectives-<!--Update this-->
-* 
-* 
-* 
-* 
-* 
-## Site Owner Objectives-<!--Update this-->
-* 
-* 
-* 
+## User Objectives-
+* To be able to easily navigate the site and begin gameplay.
+* Have enough randomisation in the game to be able to remain entertaining.
+* Game will be catered on shape differences and not shape AND colour differences with the rationale being based on the academic research of Çiğdem Kudiaki & Aslı Aslan. (https://www.sciencedirect.com/science/article/pii/S0887617707001035) 
+## Site Owner Objectives-
+* To make a simple and intuative game that can be used to aid short term memory recall.
+* Must be familiar enough to play for people who may not be computer literate.
+* Ensure contrast and display is simple but attention grabbing whilst providing information needed to user about the game itself.
 # DESIGN-<!--Update this-->
-* Typography used is 
-* Colour scheme has been chosen to be contrasting with light/dark colours in the background image with a simple backup colour in order to not clash with the red back of the playing card or the simple monochrome of the rorshach images themselves.
+* Typography used is Oswald with a font weight of 600 to be easily readable on the dark background with a backup font of Sans Serif.
+* Colour scheme has been chosen to be contrasting with light/dark colours in the background image with a simple backup colour of green in order to not clash with the red back of the playing card or the simple monochrome of the rorshach images themselves.
 * Font awesome icon has been used to add decoration to the limited text on the index.html page. 
 
 ## Wireframe mocks-<!--Update this-->
-<img src="">
 <img src="">
 <img src="">
 
@@ -24,13 +21,8 @@
 ### Mobile & portrait tablet
 <img src="">
 <img src="">
-<img src="">
-<img src="">
 
 ### Landscape tablet & desktop-<!--Update this-->
-<img src="">
-<img src="">
-<img src="">
 <img src="">
 <img src="">
 
@@ -61,8 +53,6 @@
 * Tested through W3C code tester for HTML and W3C for CSS with no errors. The were warnings on all 3 html pages advising the use of h2 to h6 tags due to the word "section" being used in the html code although this was not required for this project and in future would be avoided.
 <img src="">
 <img src="">
-<img src="">
-<img src="">
 
 * The website was tested on XXXXXXXX browsers. <!--Update this-->
 * The website was tested on XXXXXXXX phones. <!--Update this-->
@@ -87,7 +77,7 @@ The project was deployed to GitHub Pages using the following procedure:
 
 # CREDITS- <!--Update this-->
 * Code for the form was resused from my challenge 2 submission at the end of the running walkthrough. This was then adjusted and added to in order to make it relevant for what the CONTACT page was trying to achieve.
-* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file.
+* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file. He also helped me by providing the code for the resetGameboard function.
 * Thanks also to Bim Williams who 
 * 
 
