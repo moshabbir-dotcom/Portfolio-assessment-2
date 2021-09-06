@@ -6,6 +6,7 @@ let card1, card2;
 
 function spinCard() {
     if (freezeBoard) return;
+    if (this === card1) return;
     this.classList.add("spin");
 
     if (!hasTurnedCard) {
@@ -45,4 +46,6 @@ function spinBack() {
     freezeBoard = false;
     }, 1250);   
 }
+
+
 cards.forEach(card => card.addEventListener("click", spinCard))
