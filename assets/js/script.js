@@ -16,22 +16,19 @@ function spinCard() {
         card1 = this;
 
         return
-
-    }   else {
+    }   
         //this is the second spin
         card2 = this;
 
         matchCard();
-    }
+    
 }
 
 function matchCard() {
    //this is to check if both cards match
-   if (card1.dataset.cardid === card2.dataset.cardid) {
-    cardOff();
-    }   else {
-        spinBack();
-        } 
+   let ifMatch = card1.dataset.cardid === card2.dataset.cardid;
+   
+   ifMatch ? cardOff() : spinBack();
 }
 
 function cardOff(){
@@ -45,9 +42,11 @@ function cardOff(){
 function spinBack() {
     //if the cards are not the same
   freezeBoard = true;
+
     setTimeout(() => {
     card1.classList.remove("spin");
     card2.classList.remove("spin");
+    
     resetGameboard();
     }, 1250);   
 }

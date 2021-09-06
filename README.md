@@ -8,7 +8,7 @@
 * To make a simple and intuative game that can be used to aid short term memory recall.
 * Must be familiar enough to play for people who may not be computer literate.
 * Ensure contrast and display is simple but attention grabbing whilst providing information needed to user about the game itself.
-# DESIGN-<!--Update this-->
+# DESIGN-
 * Typography used is Oswald with a font weight of 600 to be easily readable on the dark background with a backup font of Sans Serif.
 * Colour scheme has been chosen to be contrasting with light/dark colours in the background image with a simple backup colour of green in order to not clash with the red back of the playing card or the simple monochrome of the rorshach images themselves.
 * Font awesome icon has been used to add decoration to the limited text on the index.html page. 
