@@ -69,7 +69,7 @@ function resetGameboard() {
 cards.forEach(card => card.addEventListener("click", spinCard))
 
 function timeStart(){
-    watch.style.color = "#0f62fe";
+    watch.style.color = "green";
     clearInterval(timer);
     timer = setInterval(() => {
       millisecound += 10;

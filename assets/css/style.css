@@ -116,6 +116,21 @@ img {
 .text a {
     display: contents;
 }
+.timer-container {
+    font-size: 45px;
+    width: 200px;
+    margin:0 auto
+}
+.timer-container button {
+    background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
 @media only screen and (max-width: 600px) {
     .playing-card{
         margin:1% !important;
