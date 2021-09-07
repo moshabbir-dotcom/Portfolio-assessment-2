@@ -52,7 +52,7 @@ h1 {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    
+
 }
 
 .gameplay-area {
@@ -164,4 +164,7 @@ img {
         font-size: 22px;
         margin: 20px auto;
     }
+    .text-container{
+        max-width: 375px;
+        margin: 0 auto;
 }
