@@ -111,7 +111,7 @@ img {
 
 @media only screen and (max-width: 600px) {
     .playing-card{
-        margin:0;
+        margin:1% !important;
     }
     .gameplay-area {
         perspective: 500px;
@@ -119,6 +119,6 @@ img {
         width: 100%;
     }
     .card-back, .card-front{
-        
+        padding: 5px !important;
     }
 }
