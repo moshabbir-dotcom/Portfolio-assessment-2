@@ -103,9 +103,10 @@ img {
 
 .text {
     display: flex;
-    justify-content: space-evenly;
-    color: red;
+    /* justify-content: space-evenly; */
+    color: white;
     text-align: center;
+    align-items: baseline;
 }
 
 
