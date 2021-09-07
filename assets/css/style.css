@@ -112,6 +112,9 @@ img {
 .text-container{
     max-width: 480px;
     margin: 0 auto;
+    font-size: 45px;
+    width: 250px;
+    margin: 0 auto;
 }
 .text a {
     display: contents;
@@ -122,14 +125,15 @@ img {
     margin:0 auto
 }
 .timer-container button {
-    background-color: #4CAF50; 
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 9px 27px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px #00000029;
 }
 .timer-container .stop{
     background-color: red;
