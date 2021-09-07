@@ -35,7 +35,7 @@ nav {
 }
 
 h1 {
-    color: aqua;
+    color: red;
     text-align: center;
     text-transform: uppercase;
 }
@@ -87,3 +87,9 @@ img {
     height: 185px;
 }
 
+.text {
+    display: flex;
+    justify-content: space-evenly;
+    color: red;
+    text-align: center;
+}
