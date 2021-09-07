@@ -109,7 +109,13 @@ img {
     align-items: baseline;
 }
 
-
+.text-container{
+    max-width: 480px;
+    margin: 0 auto;
+}
+.text a {
+    display: contents;
+}
 @media only screen and (max-width: 600px) {
     .playing-card{
         margin:1% !important;
