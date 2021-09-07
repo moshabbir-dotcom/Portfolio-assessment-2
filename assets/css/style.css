@@ -118,7 +118,7 @@ img {
 }
 .timer-container {
     font-size: 45px;
-    width: 200px;
+    width: 250px;
     margin:0 auto
 }
 .timer-container button {
@@ -130,6 +130,9 @@ img {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+}
+.timer-container .stop{
+    background-color: red;
 }
 @media only screen and (max-width: 600px) {
     .playing-card{
