@@ -52,14 +52,16 @@
 ## About page-
 * 
 # TESTING-
-<!--Update this-->
-* Tested through W3C code tester for HTML and W3C for CSS with no errors. The were warnings on all 3 html pages advising the use of h2 to h6 tags due to the word "section" being used in the html code although this was not required for this project and in future would be avoided.
-<img src="">
-<img src="">
+* Tested through W3C code tester for HTML and W3C for CSS with no errors. The was a warnings on the index.html pages advising the use of h2 to h6 tags due to the word "section" being used in the html code to identify the section class. There was no other issue or advisory statement on the remaining html pages or css & js files as evidenced below.
+<img src="/assets/images/p2cssvalidation.png">
+<img src="/assets/images/p2indexvalidation.png">
+<img src="/assets/images/p2h2playvalidation.png">
+<img src="/assets/images/p2aboutvalidation.png">
+<img src="/assets/images/jsvalidation.png">
 
-* The website was tested on XXXXXXXX browsers. <!--Update this-->
-* The website was tested on XXXXXXXX phones. <!--Update this-->
-* People in the acknowledgement section and family/friends were asked to navigate the site and give feedback on any difficulties encountered.
+* The website was tested on edge, chrome & safari browsers.
+* The website was tested on iphone 11, samsung s10+, sony experia and iphone8 mobile phones.
+* People in the acknowledgement section and family/friends were asked to navigate the site and give feedback on any difficulties encountered. It is some of their feedback that has informed some of the opportunities.
 
 
 ## Bugs- 
