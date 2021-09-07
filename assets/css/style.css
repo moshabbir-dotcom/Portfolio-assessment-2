@@ -52,6 +52,7 @@ h1 {
     color: white;
     text-align: center;
     text-transform: uppercase;
+    
 }
 
 .gameplay-area {
@@ -105,8 +106,9 @@ img {
     display: flex;
     /* justify-content: space-evenly; */
     color: white;
-    text-align: center;
+    text-align: left;
     align-items: baseline;
+    margin: 12px;
 }
 
 .text-container{
@@ -140,6 +142,12 @@ img {
 .timer-container .stop{
     background-color: red;
 }
+
+.fas.fa-brain {
+    margin-right: 12px;
+}
+
+
 @media only screen and (max-width: 600px) {
     .playing-card{
         margin:1% !important;
