@@ -3,6 +3,9 @@ const cards = document.querySelectorAll(".playing-card");
 let hasTurnedCard = false;
 let freezeBoard = false;
 let card1, card2;
+const watch = document.querySelector("#stopwatch");
+let millisecound = 0;
+let timer;
 
 function spinCard() {
     if (freezeBoard) return;
@@ -64,3 +67,11 @@ function resetGameboard() {
 })(); 
 
 cards.forEach(card => card.addEventListener("click", spinCard))
+
+function timeStart(){
+    watch.style.color = "#0f62fe";
+    clearInterval(timer);
+    timer = setInterval(() => {
+      millisecound += 10;
+    }
+}
