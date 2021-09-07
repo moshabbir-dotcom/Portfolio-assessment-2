@@ -87,3 +87,9 @@ function timePaused() {
     watch.style.color = "red";
     clearInterval(timer);
   }
+  document.addEventListener('click', (e) => {
+    const el = e.target;
+
+    if(el.id === 'start') timeStart();
+    if(el.id === 'pause') timePaused();
+  })
