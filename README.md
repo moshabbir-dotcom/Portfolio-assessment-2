@@ -3,15 +3,16 @@
 ## User Objectives-
 * To be able to easily navigate the site and begin gameplay.
 * Have enough randomisation in the game to be able to remain entertaining.
-* Game will be catered on shape differences and not shape AND colour differences with the rationale being based on the academic research of Çiğdem Kudiaki & Aslı Aslan. (https://www.sciencedirect.com/science/article/pii/S0887617707001035) 
+* Game will be catered on shape differences and not shape AND colour differences with the rationale being based on the academic research of Çiğdem Kudiaki & Aslı Aslan. (https://www.sciencedirect.com/science/article/pii/S0887617707001035)
+* User should have a way to be challenegd hence the stopwatch function.
 ## Site Owner Objectives-
 * To make a simple and intuative game that can be used to aid short term memory recall.
 * Must be familiar enough to play for people who may not be computer literate.
 * Ensure contrast and display is simple but attention grabbing whilst providing information needed to user about the game itself.
 # DESIGN-
 * Typography used is Oswald with a font weight of 600 to be easily readable on the dark background with a backup font of Sans Serif.
-* Colour scheme has been chosen to be contrasting with light/dark colours in the background image with a simple backup colour of green in order to not clash with the red back of the playing card or the simple monochrome of the rorshach images themselves.
-* Font awesome icon has been used to add decoration to the limited text on the index.html page. 
+* Colour scheme has been chosen to be contrasting with light/dark colours in the background image with a simple backup colour of black in order to not clash with the red back of the playing card or the simple monochrome of the rorshach images themselves.
+* Font awesome icon has been used to add decoration to the limited text on the html pages. 
 
 ## Wireframe mocks-<!--Update this-->
 <img src="">
@@ -27,7 +28,7 @@
 <img src="">
 
 # FEATURE 
-* Website is responsive on multiple device sizes due to sizes being set at % of viewport height of device reducing the need for media queries.
+* Website is responsive on multiple device sizes due to sizes being set at % of viewport height of device reducing the need for media queries although media queries were still required to satisfy different screen sizes as styling was affected adversely.
 * Interactive elements include the game itself.
 
 # LANGUAGES-
@@ -48,6 +49,8 @@
 * 
 ## Gameplay page- 
 * 
+## About page-
+* 
 # TESTING-
 <!--Update this-->
 * Tested through W3C code tester for HTML and W3C for CSS with no errors. The were warnings on all 3 html pages advising the use of h2 to h6 tags due to the word "section" being used in the html code although this was not required for this project and in future would be avoided.
@@ -60,7 +63,6 @@
 
 
 ## Bugs- 
-* <!--Update this-->
 * When writing the hasTurnedCard function the second card was not spinning if there was no match on the dataset. As a result a timeout function had to be set as part of the function itself in order to allow the user enough time to see the second card before making another selection.
 * When double clicking the SAME card it caused the removeEventListener function to occur as the data.cardid matched so the single card then stayed spun with the image on display. Another conditon had to be set in the hasTurnedCard function which if card1 was clicked on twice would cause a return from the function and would only stay spun if the dataset.cardid matched for two DIFFERENT cards clicked upon.
 * If more than 2 cards where clicked BEFORE the initial 2 cards had either matched or spun back it would cause the game to crash. A solution for this was to not allow more than 2 cards to be selected so they could either be matched and taken out of play or spin back around before the game would allow for another selection of card.
@@ -75,18 +77,17 @@ The project was deployed to GitHub Pages using the following procedure:
 * The page then refreshed.
 * The gihub pages section then had a link to the published page.
 
-# CREDITS- <!--Update this-->
+# CREDITS-
 * Code for the form was resused from my challenge 2 submission at the end of the running walkthrough. This was then adjusted and added to in order to make it relevant for what the CONTACT page was trying to achieve.
 * Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file. He also helped me by providing the code for the resetGameboard function and introduced me to the IIFE (Immediately Invoked Function Expression) which ensures the game is random everytime it is played.
-* Thanks also to Bim Williams who 
-* 
+* Thanks also to Bim Williams who helped me with idea around how to approach design in future with a mobile 1st approach
+* Code for the stopwatch was taken fromn the dev.to website and adapted for use.
+* Code to randomise game was taken from freecode academy.
 
 # CONTENT & MEDIA-
 * All photos and videos are copyright of the respective copyright holders and taken from free image sites. The images were then all compressed to aid in page load speed.
 
-# OPPORTUNITIES- <!--Update this-->
+# OPPORTUNITIES-
 * There is an opportunity to increase the complexity of the game by adding a scoring mechanic which if a minimum score is achieved would open up another "level" in that the gameplay grid could start from a 3x3 and potentially go up to a 32x32 gameplay grid for all 16 Rorschach images obtained when collating images to be used as part of the design and planning stage.
 * With the above in mind it could also be an option to build in the functionality to select a gamplay grid before loading a game which would remove the need to have to "level up" everytime a user plays.
-* There is another opportunity in making the code easier to read by using ternary operators although at this stage of my coding journey I find it easier to be using the longer syntax in order to understand the code I am writing.
-
-* 
+* There is another opportunity in making the timer automated so that it starts on the initial click of the gameplay grid and stops automatically when the game is completed.
