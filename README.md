@@ -15,9 +15,12 @@
 * Colour scheme has been chosen to be contrasting with light/dark colours in the background image with a simple backup colour of black in order to not clash with the red back of the playing card or the simple monochrome of the rorshach images themselves.
 * Font awesome icon has been used to add decoration to the limited text on the html pages. 
 
-## Wireframe mocks-<!--Update this-->
-<img src="">
-<img src="">
+## Wireframe mocks-
+### Mobile & tablet
+<img src="/assets/images/mobiletabletwf.jpg">
+
+### Landscape tablet & desktop
+<img src="/assets/images/desktopwf.jpg">
 
 ## Wireframe realisation after deployment-
 ### Mobile

@@ -46,6 +46,7 @@ nav {
     color: white;
   }
   
+  /* Add a color to the clickable links to aid visibility */
   a {
       color: #f2f2f2;
   }
