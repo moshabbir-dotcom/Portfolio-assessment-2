@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    background-image: url(/assets/images/digibrain1024.jpg);
+    background-image: url(../images/digibrain1024.jpg);
     background-color: black;
     background-position: center;
     font-family: 'Oswald', sans-serif;
