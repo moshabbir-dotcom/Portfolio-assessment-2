@@ -9,6 +9,7 @@
 * To make a simple and intuative game that can be used to aid short term memory recall.
 * Must be familiar enough to play for people who may not be computer literate.
 * Ensure contrast and display is simple but attention grabbing whilst providing information needed to user about the game itself.
+* Be functional across a variety of device sizes. (Minimum screen size is assumed to be 375px as per the majority of hardware manufacturers use this size as the minimum.)
 # DESIGN-
 * Typography used is Oswald with a font weight of 600 to be easily readable on the dark background with a backup font of Sans Serif.
 * Colour scheme has been chosen to be contrasting with light/dark colours in the background image with a simple backup colour of black in order to not clash with the red back of the playing card or the simple monochrome of the rorshach images themselves.
@@ -18,21 +19,21 @@
 <img src="">
 <img src="">
 
-## Wireframe realisation after deployment-<!--Update this-->
+## Wireframe realisation after deployment-
 ### Mobile
-<img src="assets/images/mobileindex.png">
-<img src="assets/images/mobileh2.png">
-<img src="assets/images/mobileabout.png">
+<img src="/assets/images/mobileindex.png">
+<img src="/assets/images/mobileh2.png">
+<img src="/assets/images/mobileabout.png">
 
 ### Portrait tablet
-<img src="assets/images/tabletindex.png">
-<img src="assets/images/tableth2.png">
-<img src="workspace/Portfolio-assessment-2/assets/images/tabletabout.png">
+<img src="/assets/images/tabletindex.png">
+<img src="/assets/images/tableth2.png">
+<img src="/assets/images/tabletabout.png">
 
 ### Landscape tablet & desktop-
-<img src="assets/images/desktopindex.png">
-<img src="assets/images/desktoph2.png">
-<img src="assets/images/desktopabout.png">
+<img src="/assets/images/desktopindex.png">
+<img src="/assets/images/desktoph2.png">
+<img src="/assets/images/desktopabout.png">
 
 # FEATURE 
 * Website is responsive on multiple device sizes due to sizes being set at % of viewport height of device reducing the need for media queries although media queries were still required to satisfy different screen sizes as styling was affected adversely.
@@ -51,13 +52,14 @@
 * [TinyPNG](https://tinypng.com) TinyPNG was used to compress image sizes to aid in page loading speed.
 * [Favicon](https://favicon.io/) Favicon was used to compress image files into an icon for use in the website.
 
-# DETAILED SECTION SUMMARY-<!--Update this-->
-## How 2 play page- 
-* 
-## Gameplay page- 
-* 
+# SECTION SUMMARY-
+## Gameplay page-
+* Light and dark contrasting design with gamplay area filling as much area of the screen as possible to aid visibility. The timer has been placed at the top of the page in order to be a prominant feature allowing for the game to be challenging on every play as there are no "levels" to work through. As the game is directed to older people the card backing has been selected to be a traditional type design to keep the familiarity when playing card match on a digital platform.
+## How 2 play page-
+* Simple aligned text with an icon spaced to give simple instructions in how to play the game. Text was hard to see against the image hence a shadow box was put around text areas to ais in visibility.
 ## About page-
-* 
+* Simple aligned text with an icon spaced to give background on the reasons to make the game. Text was hard to see against the image hence a shadow box was put around text areas to ais in visibility.
+
 # TESTING-
 * Tested through W3C code tester for HTML and W3C for CSS with no errors. The was a warnings on the index.html pages advising the use of h2 to h6 tags due to the word "section" being used in the html code to identify the section class. There was no other issue or advisory statement on the remaining html pages or css & js files as evidenced below.
 <img src="/assets/images/p2cssvalidation.png">
