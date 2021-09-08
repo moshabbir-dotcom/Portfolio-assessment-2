@@ -93,7 +93,7 @@ The project was deployed to GitHub Pages using the following procedure:
 # CREDITS-
 * Code for the form was resused from my challenge 2 submission at the end of the running walkthrough. This was then adjusted and added to in order to make it relevant for what the CONTACT page was trying to achieve.
 * Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file. He also helped me by providing the code for the resetGameboard function and introduced me to the IIFE (Immediately Invoked Function Expression) which ensures the game is random everytime it is played.
-* Thanks also to Bim Williams who helped me with idea around how to approach design in future with a mobile 1st approach
+* Thanks also to Bim Williams who helped me with idea around how to approach design in future with a mobile 1st approach instead of adding media queries afterwards for mobile but the other way around due to users of the web prodominantly accessing sites via mobile devices.
 * Code for the stopwatch was taken fromn the dev.to website and adapted for use.
 * Code to randomise game was taken from freecode academy.
 
