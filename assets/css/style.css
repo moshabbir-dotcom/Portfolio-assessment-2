@@ -38,6 +38,7 @@ nav {
     background-color: #ddd;
     color: black;
   }
+
   
   /* Add a color to the active/current link */
   nav a.active {
@@ -45,8 +46,14 @@ nav {
     color: white;
   }
   
+  a {
+      color: #f2f2f2;
+  }
 
-
+  a:hover {
+    color: #04AA6D;
+ }
+  
 
 h1 {
     color: white;

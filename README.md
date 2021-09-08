@@ -72,7 +72,6 @@
 * The website was tested on iphone 11, samsung s10+, sony experia and iphone8 mobile phones.
 * People in the acknowledgement section and family/friends were asked to navigate the site and give feedback on any difficulties encountered. It is some of their feedback that has informed some of the opportunities. Due to the nature of the website the majority of the testers were older family members/friends family members who either have some form of visual impairment and in one case actually suffer from dementia.
 
-
 ## Bugs- 
 * When writing the hasTurnedCard function the second card was not spinning if there was no match on the dataset. As a result a timeout function had to be set as part of the function itself in order to allow the user enough time to see the second card before making another selection.
 * When double clicking the SAME card it caused the removeEventListener function to occur as the data.cardid matched so the single card then stayed spun with the image on display. Another conditon had to be set in the hasTurnedCard function which if card1 was clicked on twice would cause a return from the function and would only stay spun if the dataset.cardid matched for two DIFFERENT cards clicked upon.
