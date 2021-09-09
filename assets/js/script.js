@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const cards = document.querySelectorAll(".playing-card");
 
 let hasTurnedCard = false;
@@ -18,7 +20,7 @@ function spinCard() {
         hasTurnedCard = true;
         card1 = this;
 
-        return
+        return;
     }   
         //this is the second spin
         card2 = this;
@@ -66,7 +68,7 @@ function resetGameboard() {
     });
 })(); 
 
-cards.forEach(card => card.addEventListener("click", spinCard))
+cards.forEach(card => card.addEventListener("click", spinCard));
 
 function timeStart(){
     watch.style.color = "#04AA6D";
@@ -92,4 +94,4 @@ function timePaused() {
 
     if(el.id === 'start') timeStart();
     if(el.id === 'pause') timePaused();
-  })
+  });
