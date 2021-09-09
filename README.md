@@ -71,8 +71,8 @@
 <img src="/assets/images/p2aboutvalidation.png">
 <img src="/assets/images/jsvalidation.png">
 
-* The website was tested on edge, chrome & safari browsers.
-* The website was tested on iphone 11, samsung s10+, sony experia and iphone8 mobile phones.
+* The website was tested on edge, chrome & safari browsers without issue.
+* The website was tested on iphone 11, samsung s10+, sony experia and iphone8 mobile phones and remianed responsive from mobile 375px through to desktop 1024px. Screenshots are demostrated above.
 * People in the acknowledgement section and family/friends were asked to navigate the site and give feedback on any difficulties encountered. It is some of their feedback that has informed some of the opportunities. Due to the nature of the website the majority of the testers were older family members/friends family members who either have some form of visual impairment and in one case actually suffer from dementia.
 
 ## Bugs- 
@@ -94,8 +94,9 @@ The project was deployed to GitHub Pages using the following procedure:
 * Code for the form was resused from my challenge 2 submission at the end of the running walkthrough. This was then adjusted and added to in order to make it relevant for what the CONTACT page was trying to achieve.
 * Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file. He also helped me by providing the code for the resetGameboard function and introduced me to the IIFE (Immediately Invoked Function Expression) which ensures the game is random everytime it is played.
 * Thanks also to Bim Williams who helped me with idea around how to approach design in future with a mobile 1st approach instead of adding media queries afterwards for mobile but the other way around due to users of the web prodominantly accessing sites via mobile devices.
+* My mentor Cans Sucullu provided me with the code (/*jshint esversion: 6 */) to put at the top of the js file to resolve warnings that were appearing on js.hint.
 * Code for the stopwatch was taken fromn the dev.to website and adapted for use.
-* Code to randomise game was taken from freecode academy.
+* Code to randomise game was taken from freecode camp.
 
 # CONTENT & MEDIA-
 * All photos and videos are copyright of the respective copyright holders and taken from free image sites. The images were then all compressed to aid in page load speed.
