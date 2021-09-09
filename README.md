@@ -4,7 +4,7 @@
 * To be able to easily navigate the site and begin gameplay.
 * Have enough randomisation in the game to be able to remain entertaining.
 * Game will be catered on shape differences and not shape AND colour differences with the rationale being based on the academic research of Çiğdem Kudiaki & Aslı Aslan. (https://www.sciencedirect.com/science/article/pii/S0887617707001035)
-* User should have a way to be challenegd hence the stopwatch function.
+* User should have a way to be challenged hence the timer function with the ability to pause and restart the timer midgame.
 ## Site Owner Objectives-
 * To make a simple and intuative game that can be used to aid short term memory recall.
 * Must be familiar enough to play for people who may not be computer literate.
@@ -80,6 +80,8 @@
 * When writing the hasTurnedCard function the second card was not spinning if there was no match on the dataset. As a result a timeout function had to be set as part of the function itself in order to allow the user enough time to see the second card before making another selection.
 * When double clicking the SAME card it caused the removeEventListener function to occur as the data.cardid matched so the single card then stayed spun with the image on display. Another conditon had to be set in the hasTurnedCard function which if card1 was clicked on twice would cause a return from the function and would only stay spun if the dataset.cardid matched for two DIFFERENT cards clicked upon.
 * If more than 2 cards where clicked BEFORE the initial 2 cards had either matched or spun back it would cause the game to crash. A solution for this was to not allow more than 2 cards to be selected so they could either be matched and taken out of play or spin back around before the game would allow for another selection of card.
+* CSS and JS script did not load when delploying to github pages as the syntax for links in the html script needed to be updated.
+* There were multiple warnings when initially validating code through jshint which was rectified by using the script (/*jshint esversion: 6 */) at the top of the js file.
 
 # DEPLOYMENT-
 The project was deployed to GitHub Pages using the following procedure:
@@ -93,7 +95,7 @@ The project was deployed to GitHub Pages using the following procedure:
 
 # CREDITS-
 * Code for the form was resused from my challenge 2 submission at the end of the running walkthrough. This was then adjusted and added to in order to make it relevant for what the CONTACT page was trying to achieve.
-* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file for which a ternary statment is on line 42. He also helped me by providing the code for the resetGameboard function and introduced me to the IIFE (Immediately Invoked Function Expression) which ensures the game is random everytime it is played.
+* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file for which a ternary statment is on line 42. He also helped me by providing the code for the resetGameboard function and introduced me to the IIFE (Immediately Invoked Function Expression) which ensures the game is random everytime it is played buy writing the syntax with an extra pair of brackets.
 * Thanks also to Bim Williams who helped me with idea around how to approach design in future with a mobile 1st approach instead of adding media queries afterwards for mobile but the other way around due to users of the web prodominantly accessing sites via mobile devices. He also helped me in adapting the cardoff function in order for the stopwatch to stop when there were no cards left to match. My approach would have been to stop the clock at 6 matches counting up whereas he advised that it would be better to stop at 0 left to match which would allow mw to use the same code block when increasing the number of cards as long as the array remains relevant to number of cards.
 * My mentor Cans Sucullu provided me with the code (/*jshint esversion: 6 */) to put at the top of the js file to resolve warnings that were appearing on js.hint.
 * Code for the stopwatch was taken fromn the dev.to website and adapted for use so that not only do the buttons work but serve as overides to the auto start and stop when the game begins and ends.
