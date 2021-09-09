@@ -12,21 +12,25 @@
     <title>Memory Game Brain Train!</title>
 </head>
 <body>
+    <!--Navigation Bar-->
     <nav class="topnav">
         <a href="index.html" class="navlink active">Play Game</a>
         <a href="h2play.html" class="navlink">How 2 Play</a>
         <a href="about.html" class="navlink">About</a>
     </nav>
     <header>
+        <!--Main title-->
         <h1><i class="fas fa-brain"></i> Rorschach inkblot Memory Game <i class="fas fa-brain"></i></h1>
     </header>
+    <!--Stopwatch/Timer-->
     <div class="timer-container">
         <div id="timer">
             00:00:00:00
         </div>
         <button id="start">Start</button>
-        <button id="pause" class="stop">Stop</button>
+        <button id="pause" class="stop">Pause</button>
     </div>
+    <!--Main game area-->
     <section class="gameplay-area">
         <div class="playing-card" data-cardid="inkblot1">
             <img class="card-front" src="assets/images/inkblot1.jpg" alt="inkblot 1"/>
@@ -77,6 +81,7 @@
             <img class="card-back" src="assets/images/redcarddesign.jpg" alt="redcard back"/>
         </div>
     </section>
+    <!--JS Script-->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
