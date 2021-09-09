@@ -64,12 +64,13 @@
 * Simple aligned text with an icon spaced to give background on the reasons to make the game. Text was hard to see against the image hence a shadow box was put around text areas to ais in visibility.
 
 # TESTING-
-* Tested through W3C code tester for HTML and W3C for CSS with no errors. The was a warnings on the index.html pages advising the use of h2 to h6 tags due to the word "section" being used in the html code to identify the section class. There was no other issue or advisory statement on the remaining html pages or css & js files as evidenced below.
+* Tested through W3C code tester for HTML and W3C for CSS with no errors. The was a warnings on the index.html pages advising the use of h2 to h6 tags due to the word "section" being used in the html code to identify the section class. There was no other issue or advisory statement on the remaining html pages or css file as evidenced below. When validating through jshint however there was a warning on line 42 which is a ternary statment.
 <img src="/assets/images/p2cssvalidation.png">
 <img src="/assets/images/p2indexvalidation.png">
 <img src="/assets/images/p2h2playvalidation.png">
 <img src="/assets/images/p2aboutvalidation.png">
 <img src="/assets/images/jsvalidation.png">
+<img src="/assets/images/jshintvalidation.png">
 
 * The website was tested on edge, chrome & safari browsers without issue.
 * The website was tested on iphone 11, samsung s10+, sony experia and iphone8 mobile phones and remianed responsive from mobile 375px through to desktop 1024px. Screenshots are demostrated above.
@@ -92,10 +93,10 @@ The project was deployed to GitHub Pages using the following procedure:
 
 # CREDITS-
 * Code for the form was resused from my challenge 2 submission at the end of the running walkthrough. This was then adjusted and added to in order to make it relevant for what the CONTACT page was trying to achieve.
-* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file. He also helped me by providing the code for the resetGameboard function and introduced me to the IIFE (Immediately Invoked Function Expression) which ensures the game is random everytime it is played.
-* Thanks also to Bim Williams who helped me with idea around how to approach design in future with a mobile 1st approach instead of adding media queries afterwards for mobile but the other way around due to users of the web prodominantly accessing sites via mobile devices.
+* Credit is also given to Adill Bashir who helped me better understand the ways in which to write JavaScript syntax and helping me to practice my code writing by challenging what I had written in order to become more concise and easier to read as part of the script.js file for which a ternary statment is on line 42. He also helped me by providing the code for the resetGameboard function and introduced me to the IIFE (Immediately Invoked Function Expression) which ensures the game is random everytime it is played.
+* Thanks also to Bim Williams who helped me with idea around how to approach design in future with a mobile 1st approach instead of adding media queries afterwards for mobile but the other way around due to users of the web prodominantly accessing sites via mobile devices. He also helped me in adapting the cardoff function in order for the stopwatch to stop when there were no cards left to match. My approach would have been to stop the clock at 6 matches counting up whereas he advised that it would be better to stop at 0 left to match which would allow mw to use the same code block when increasing the number of cards as long as the array remains relevant to number of cards.
 * My mentor Cans Sucullu provided me with the code (/*jshint esversion: 6 */) to put at the top of the js file to resolve warnings that were appearing on js.hint.
-* Code for the stopwatch was taken fromn the dev.to website and adapted for use.
+* Code for the stopwatch was taken fromn the dev.to website and adapted for use so that not only do the buttons work but serve as overides to the auto start and stop when the game begins and ends.
 * Code to randomise game was taken from freecode camp.
 
 # CONTENT & MEDIA-
@@ -104,5 +105,5 @@ The project was deployed to GitHub Pages using the following procedure:
 # OPPORTUNITIES-
 * There is an opportunity to increase the complexity of the game by adding a scoring mechanic which if a minimum score is achieved would open up another "level" in that the gameplay grid could start from a 3x3 and potentially go up to a 32x32 gameplay grid for all 16 Rorschach images obtained when collating images to be used as part of the design and planning stage.
 * With the above in mind it could also be an option to build in the functionality to select a gamplay grid before loading a game which would remove the need to have to "level up" everytime a user plays.
-* There is another opportunity in making the timer automated so that it starts on the initial click of the gameplay grid and stops automatically when the game is completed.
 * A styling opportunity would be to have the gameplay area not requiring scrolling due to the timer pushing the gameplay area down however making the gameplay area smaller resulted in feedback that the shapes became too hard to see for somw of the oler testers.
+* An opportunity for myself is to become more comfortable with ternary statements as although they are more concise at this stage of my learning I prefer to use the longer syntax for my own understanding.

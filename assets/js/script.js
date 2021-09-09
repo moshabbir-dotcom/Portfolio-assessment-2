@@ -11,7 +11,7 @@ let timer;
 let timerRunning = false;
 let cardPairs = [
     "inkblot0", "inkblot1", "inkblot2", "inkblot3", "inkblot4", "inkblot5",
-]
+];
 
     //spins selected card around
 function spinCard() {
@@ -38,6 +38,7 @@ function matchCard() {
    //this is to check if both cards match
    let ifMatch = card1.dataset.cardid === card2.dataset.cardid;
    
+   //ternary script example from Adill Bashir
    ifMatch ? cardOff(card1.dataset.cardid) : spinBack();
 }
 
@@ -46,9 +47,10 @@ function cardOff(id){
     card1.removeEventListener("click", spinCard);
     card2.removeEventListener("click", spinCard);
     resetGameboard();
-    const newCardset = cardPairs.filter((cardid) => cardid !== id)
+    //Bim helped me with this to count cards down and not up
+    const newCardset = cardPairs.filter((cardid) => cardid !== id);
     cardPairs = newCardset;
-    console.log("new card set")
+    console.log("new card set");
     if (newCardset.length <= 0) {
         timePaused();
     }
@@ -83,7 +85,7 @@ function resetGameboard() {
 
 cards.forEach(card => card.addEventListener("click", spinCard));
 
-    //Timer code attributed to dev.to website
+    //Timer code attributed to dev.to website and adapted
 function timeStart(){
     watch.style.color = "#04AA6D";
     if (timerRunning) {
