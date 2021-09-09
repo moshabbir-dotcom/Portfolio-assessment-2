@@ -8,12 +8,16 @@ let card1, card2;
 const watch = document.querySelector("#timer");
 let millisecound = 0;
 let timer;
+let timerRunning = false;
+let cardPairs = [
+    "inkblot0", "inkblot1", "inkblot2", "inkblot3", "inkblot4", "inkblot5",
+]
 
     //spins selected card around
 function spinCard() {
     if (freezeBoard) return;
     if (this === card1) return;
-
+    timeStart();
     this.classList.add("spin");
 
     if (!hasTurnedCard) {
@@ -34,15 +38,20 @@ function matchCard() {
    //this is to check if both cards match
    let ifMatch = card1.dataset.cardid === card2.dataset.cardid;
    
-   ifMatch ? cardOff() : spinBack();
+   ifMatch ? cardOff(card1.dataset.cardid) : spinBack();
 }
 
-function cardOff(){
+function cardOff(id){
     //if the cards are the same
     card1.removeEventListener("click", spinCard);
     card2.removeEventListener("click", spinCard);
-
     resetGameboard();
+    const newCardset = cardPairs.filter((cardid) => cardid !== id)
+    cardPairs = newCardset;
+    console.log("new card set")
+    if (newCardset.length <= 0) {
+        timePaused();
+    }
 }
 
 function spinBack() {
@@ -77,6 +86,9 @@ cards.forEach(card => card.addEventListener("click", spinCard));
     //Timer code attributed to dev.to website
 function timeStart(){
     watch.style.color = "#04AA6D";
+    if (timerRunning) {
+        return;
+    }
     clearInterval(timer);
     timer = setInterval(() => {
       millisecound += 10;
@@ -88,12 +100,14 @@ function timeStart(){
       ('0'+dateTimer.getUTCSeconds()).slice(-2) + ':' +
       ('0'+dateTimer.getUTCMilliseconds()).slice(-3,-1);
     }, 10);
+    timerRunning = true;
 }
 
     //To freeze the timer if required
 function timePaused() {
     watch.style.color = "red";
     clearInterval(timer);
+    timerRunning = false;
   }
   document.addEventListener('click', (e) => {
     const el = e.target;
