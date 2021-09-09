@@ -9,6 +9,7 @@ const watch = document.querySelector("#timer");
 let millisecound = 0;
 let timer;
 
+    //spins selected card around
 function spinCard() {
     if (freezeBoard) return;
     if (this === card1) return;
@@ -48,6 +49,7 @@ function spinBack() {
     //if the cards are not the same
   freezeBoard = true;
 
+    //removes ability to spin cards once matched
     setTimeout(() => {
     card1.classList.remove("spin");
     card2.classList.remove("spin");
@@ -56,11 +58,13 @@ function spinBack() {
     }, 1250);   
 }
 
+    //To prevent more then 2 cards being spun until either a match or not whilst allowing images to be seen by player
 function resetGameboard() {
     [hasTurnedCard, freezeBoard] = [false, false];
     [card1, card2] = [null, null];
 }
 
+    //To make card placement random taken from free code camp
 (function randomiseCards() {
     cards.forEach(card => {
         let randomPosition = Math.floor(Math.random() * 12);
@@ -70,6 +74,7 @@ function resetGameboard() {
 
 cards.forEach(card => card.addEventListener("click", spinCard));
 
+    //Timer code attributed to dev.to website
 function timeStart(){
     watch.style.color = "#04AA6D";
     clearInterval(timer);
@@ -85,6 +90,7 @@ function timeStart(){
     }, 10);
 }
 
+    //To freeze the timer if required
 function timePaused() {
     watch.style.color = "red";
     clearInterval(timer);
